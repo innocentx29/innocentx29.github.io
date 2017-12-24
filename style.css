@@ -1,0 +1,78 @@
+body{
+  background-color: #CCCCFF;
+}
+.pink-bg{
+  background-color: #d0d3d4;
+  font-size: 30px;
+}
+.my-font-bigger{
+  font-family: stencil;
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+.my-font{
+  font-family: stencil;
+  word-spacing: 10px;
+  line-height: 40px;
+}
+.text-align-left{
+  text-align: left;
+}
+.text-align-center{
+  text-align: center;
+}
+.text-align-right{
+  text-align: right;
+}
+.my-font-1{
+  text-decoration: underline;
+}
+.my-font-2{
+  text-decoration: line-through;
+}
+.my-font-3{
+  text-decoration: overline;
+}
+.my-class{
+background-color: pink;
+}
+.position-relative{
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+.position-fixed{
+  top: 200px;
+  left: 300px;
+}
+.box-a{
+  background-color: yellow;
+  position: absolute;
+  left: 20px;
+  top: 50px;
+  border: 1px solid red;
+  width: 1325px;
+  height: 300px;
+  margin: 10px;
+  padding-top: 25px;
+}
+.box-b{
+  background-color: lightgreen;
+  position: absolute;
+  left: 20px;
+  top: 50px;
+  width: 1270px;
+  height: 300px;
+  margin: 10px;
+  padding-top: 25px;
+}
+.my-class:hover{
+  background-color: blue;
+  font-size: 50px;
+}
+.my-class:first-of-type{
+  background-color: lightyellow;
+}
+.my-class:last-of-type{
+  background-color: lightblue;
+}
