@@ -9,6 +9,7 @@
       嗨，我是跑馬燈。</marquee>
     <h1 class="my-font-bigger">
     <div class="position-relative">純屬虛構。</div></h1>
+    <h2>WELCOME.</h2>
     <span class="my-font">Here is the rain, never and ever stop in my heart.<br>
     這就是那場雨，不曾也不將在我心中停止。</span><br>
     <b>朱芊潓</b>
@@ -24,9 +25,9 @@
       </tr>
     </table>
     <img src="564207.jpg" width="100" height="200">
-    <a class="my-class" href="about.html" class="my-class:hover">
+    <!--a class="my-class" href="about.html" class="my-class:hover">
       link to about
-    </a>
+    </a-->
     <span>red</span>
     <span class="pink-bg">green</span>
     <span style="color:blue;">blue</span>
@@ -37,5 +38,37 @@
       alert("Hi Buddy!");
     }
     </script>
+
+    <fb:login-button
+      scope="public_profile,email"
+      onlogin="checkLoginState();">
+    </fb:login-button>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '172616170008819',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.11'
+    });
+
+    FB.AppEvents.logPageView();
+
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+</script>
   </body>
 </html>
