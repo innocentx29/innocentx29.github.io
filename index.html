@@ -40,7 +40,7 @@
     </script>
 
     <fb:login-button
-      scope="public_profile,email"
+      scope="public_profile,email,user_likes"
       onlogin="checkLoginState();">
     </fb:login-button>
 <script>
@@ -57,7 +57,7 @@
   method: 'share',
   mobile_iframe: true,
   href: 'https://developers.facebook.com/docs/',
-}, function(response){});
+  }, function(response){});
   };
 
   (function(d, s, id){
